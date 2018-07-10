@@ -18,7 +18,7 @@ open class PKHUD: NSObject {
 
     public var viewToPresentOn: UIView?
 
-    fileprivate let container = ContainerView()
+    fileprivate let container = CustomContainerView()
     fileprivate var hideTimer: Timer?
 
     public typealias TimerAction = (Bool) -> Void
@@ -106,15 +106,6 @@ open class PKHUD: NSObject {
         set {
             container.frameView.content = newValue
             startAnimatingContentView()
-        }
-    }
-
-    open var effect: UIVisualEffect? {
-        get {
-            return container.frameView.effect
-        }
-        set {
-            container.frameView.effect = newValue
         }
     }
 
