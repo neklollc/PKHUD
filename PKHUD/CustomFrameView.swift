@@ -33,7 +33,6 @@ internal class CustomFrameView: UIView {
         set {
             _content.removeFromSuperview()
             _content = newValue
-            _content.clipsToBounds = true
             _content.contentMode = .center
             frame.size = _content.bounds.size
             self.addSubview(_content)
