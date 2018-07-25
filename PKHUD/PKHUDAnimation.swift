@@ -61,6 +61,7 @@ public final class PKHUDAnimation {
         animation.fromValue = 0
         animation.toValue = 2.0 * .pi
         animation.duration = 1.2
+        animation.isRemovedOnCompletion = false
         animation.repeatCount = Float(INT_MAX)
         return animation
     }()
