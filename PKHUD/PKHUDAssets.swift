@@ -16,6 +16,7 @@ open class PKHUDAssets: NSObject {
     open class var checkmarkImage: UIImage { return PKHUDAssets.bundledImage(named: "checkmark") }
     open class var progressActivityImage: UIImage { return PKHUDAssets.bundledImage(named: "progress_activity") }
     open class var progressCircularImage: UIImage { return PKHUDAssets.bundledImage(named: "progress_circular") }
+    open class var gearCircularImage: UIImage { return PKHUDAssets.bundledImage(named: "HUD") }
 
     internal class func bundledImage(named name: String) -> UIImage {
         let bundle = Bundle(for: PKHUDAssets.self)
