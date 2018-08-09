@@ -8,14 +8,15 @@
 
 open class PKHUDGearRotatingImageView: PKHUDRotatingImageView {
     
-    public enum HUDMode {
+    @objc public enum HUDMode: Int {
         case standart
         case clear
     }
     
-    public init(image: UIImage? = nil, subtitle: String? = nil, frame: CGRect? = nil, mode: HUDMode = .standart) {
-        let newFrame = frame ?? CGRect(origin: CGPoint.zero, size: CGSize(width: 156.0, height: 156.0))
-        super.init(frame: newFrame)
+    @objc public init(image: UIImage? = nil, subtitle: String? = nil,
+                      frame: CGRect,
+                      mode: HUDMode = .standart) {
+        super.init(frame: frame)
         self.imageView.image = image ?? PKHUDAssets.gearCircularImage
         subtitleLabel.text = subtitle
         subtitleLabel.textColor = UIColor(red:0.95, green:0.4, blue:0.12, alpha:1)

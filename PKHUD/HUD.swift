@@ -21,7 +21,7 @@ public enum HUDContentType {
     case labeledProgress(title: String?, subtitle: String?)
     case labeledImage(image: UIImage?, title: String?, subtitle: String?)
     case labeledRotatingImage(image: UIImage?, title: String?, subtitle: String?)
-    case HUDRotatingImage(image: UIImage?, subtitle: String?, frame: CGRect?, mode: PKHUDGearRotatingImageView.HUDMode)
+    case HUDRotatingImage(image: UIImage?, subtitle: String?, frame: CGRect, mode: PKHUDGearRotatingImageView.HUDMode)
 
     case label(String?)
     case systemActivity
