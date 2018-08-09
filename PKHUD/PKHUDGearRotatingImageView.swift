@@ -1,5 +1,5 @@
 //
-//  RKHUDRotatingImageView.swift
+//  PKHUDGearRotatingImageView.swift
 //  Raken
 //
 //  Created by Smolsky Aleksey on 10.07.2018.
